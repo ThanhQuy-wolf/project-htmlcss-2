@@ -21,24 +21,28 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header fixed">
-            <div class="content">
-                <div class="body">
+        <header class="header header--fixed">
+            <div class="header__content">
+                <div class="header__body">
                     <!-- Logo -->
-                    <a href="#!" class="logo">
+                    <a href="#!" class="header__logo">
                         <img src="./assets/img/Lesson..svg" alt="Lesson." />
                     </a>
 
                     <!-- Nav -->
-                    <nav class="navbar">
-                        <a href="/" class="item active">Home</a>
-                        <a href="#!" class="item">Courses </a>
-                        <a href="#!" class="item">Pricing </a>
-                        <a href="#!" class="item">Reviews </a>
+                    <nav class="header__navbar">
+                        <a
+                            href="/"
+                            class="header__nav-item header__nav-item--active"
+                            >Home</a
+                        >
+                        <a href="#!" class="header__nav-item">Courses </a>
+                        <a href="#!" class="header__nav-item">Pricing </a>
+                        <a href="#!" class="header__nav-item">Reviews </a>
                     </nav>
 
                     <!-- Action -->
-                    <a href="#!" class="btn">Sign Up</a>
+                    <a href="#!" class="header__btn">Sign Up</a>
                 </div>
             </div>
         </header>
@@ -46,109 +50,219 @@
         <!-- Main -->
         <main>
             <!-- Hero -->
-            <div class="hero">
-                <div class="content">
-                    <div class="image-box">
+            <section class="hero">
+                <div class="hero__content">
+                    <div class="hero__image-box">
                         <img
                             src="./assets/img/guy-lesson 1.jpg"
                             alt="Guy lesson"
-                            class="image"
+                            class="hero__image"
                         />
 
                         <!-- Hero-Card -->
-                        <div class="card">
-                            <div class="card-item">
-                                <div class="icon-cover icon-1">
+                        <div class="hero__card">
+                            <div class="hero__card-item">
+                                <div
+                                    class="hero__icon-cover hero__icon-cover--ui"
+                                >
                                     <img
                                         src="./assets/img/hero-icon-1.svg"
                                         alt="icon"
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                 </div>
 
-                                <div class="text-box">
-                                    <p class="desc">20 Courses</p>
-                                    <h2 class="sub-title">UI/UX Design</h2>
+                                <div class="hero__text-box">
+                                    <p class="hero__desc">20 Courses</p>
+                                    <h2 class="hero__sub-title">
+                                        UI/UX Design
+                                    </h2>
                                 </div>
                             </div>
 
-                            <div class="card-item">
-                                <div class="icon-cover icon-2">
+                            <div class="hero__card-item">
+                                <div
+                                    class="hero__icon-cover hero__icon-cover--dev"
+                                >
                                     <img
                                         src="./assets/img/hero-icon-2.svg"
                                         alt="icon"
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                 </div>
 
-                                <div class="text-box">
-                                    <p class="desc">20 Courses</p>
-                                    <h2 class="sub-title">Development</h2>
+                                <div class="hero__text-box">
+                                    <p class="hero__desc">20 Courses</p>
+                                    <h2 class="hero__sub-title">Development</h2>
                                 </div>
                             </div>
 
-                            <div class="card-item">
-                                <div class="icon-cover icon-3">
+                            <div class="hero__card-item">
+                                <div
+                                    class="hero__icon-cover hero__icon-cover--marketing"
+                                >
                                     <img
                                         src="./assets/img/hero-icon-3.svg"
                                         alt="icon"
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                 </div>
 
-                                <div class="text-box">
-                                    <p class="desc">30 Courses</p>
-                                    <h2 class="sub-title">Marketing</h2>
+                                <div class="hero__text-box">
+                                    <p class="hero__desc">30 Courses</p>
+                                    <h2 class="hero__sub-title">Marketing</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Hero Text -->
-                    <div class="text">
-                        <h1 class="title">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
                             Learn without limits and spread knowledge.
                         </h1>
 
-                        <p class="desc">
+                        <p class="hero__description">
                             Build new skills for that “this is my year” feeling
                             with courses, certificates, and degrees from
                             world-class universities and companies.
                         </p>
 
-                        <div class="cta">
-                            <a href="#!" class="btn">See Courses</a>
-                            <a href="#!" class="watch-action">
+                        <div class="hero__cta">
+                            <a href="#!" class="hero__btn">See Courses</a>
+                            <a href="#!" class="hero__watch-action">
                                 <img
                                     src="./assets/img/btn-play.svg"
                                     alt="Play button"
-                                    class="icon"
+                                    class="hero__watch-icon"
                                 />
                                 <span>Watch Video</span>
                             </a>
                         </div>
 
-                        <p class="desc desc-under">Recent engagement</p>
+                        <p class="hero__engagement-label">Recent engagement</p>
 
-                        <div class="sub-box">
-                            <p class="desc"><span>50k</span> Students</p>
+                        <div class="hero__stats">
+                            <p class="hero__stat"><span>50k</span> Students</p>
 
-                            <p class="desc"><span>70+</span> Courses</p>
+                            <p class="hero__stat"><span>70+</span> Courses</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="courses">
-                <div class="content">
-                    <h2 class="sub-title"></h2>
-                    <p class="desc"></p>
-                    <div class="pagination">
-                        <img src="" alt="" class="icon">
-                        <img src="" alt="" class="icon">
+            <section class="courses">
+                <div class="courses__content">
+                    <h2 class="courses__title">Our popular courses</h2>
+                    <p class="courses__description">
+                        Build new skills with new trendy courses and shine for
+                        the next future career.
+                    </p>
+                    <img
+                        src="./assets/img/pagination-icon.svg"
+                        alt="Pagination"
+                        class="courses__pagination-icon"
+                    />
+
+                    <div class="courses__list">
+                        <div class="courses__item">
+                            <img
+                                src="./assets/img/courses-img-1.png"
+                                alt="Basic web design"
+                                class="courses__image"
+                            />
+
+                            <div class="courses__content-block">
+                                <div class="courses__header">
+                                    <h2 class="courses__item-title">Basic web design</h2>
+                                    <div class="courses__rating-block">
+                                        <img
+                                            src="./assets/img/Star 6.svg"
+                                            alt="Star"
+                                            class="courses__star-icon"
+                                        />
+                                        <span class="courses__rating">4.5</span>
+                                    </div>
+                                </div>
+
+                                <p class="courses__item-description">
+                                    Get the best course, gain knowledge and
+                                    shine for your future career.
+                                </p>
+
+                                <div class="courses__footer">
+                                    <span class="courses__price">$120.75</span>
+                                    <a href="#!" class="courses__book-btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses__item">
+                            <img
+                                src="./assets/img/courses-img-2.png"
+                                alt="UI/UX design"
+                                class="courses__image"
+                            />
+
+                            <div class="courses__content-block">
+                                <div class="courses__header">
+                                    <h2 class="courses__item-title">UI/UX design</h2>
+                                    <div class="courses__rating-block">
+                                        <img
+                                            src="./assets/img/Star 6.svg"
+                                            alt="Star"
+                                            class="courses__star-icon"
+                                        />
+                                        <span class="courses__rating">4.5</span>
+                                    </div>
+                                </div>
+
+                                <p class="courses__item-description">
+                                    Get the best course, gain knowledge and
+                                    shine for your future career.
+                                </p>
+
+                                <div class="courses__footer">
+                                    <span class="courses__price">$120.75</span>
+                                    <a href="#!" class="courses__book-btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses__item">
+                            <img
+                                src="./assets/img/courses-img-3.png"
+                                alt="Web App design"
+                                class="courses__image"
+                            />
+
+                            <div class="courses__content-block">
+                                <div class="courses__header">
+                                    <h2 class="courses__item-title">Web App design</h2>
+                                    <div class="courses__rating-block">
+                                        <img
+                                            src="./assets/img/Star 6.svg"
+                                            alt="Star"
+                                            class="courses__star-icon"
+                                        />
+                                        <span class="courses__rating">4.5</span>
+                                    </div>
+                                </div>
+
+                                <p class="courses__item-description">
+                                    Get the best course, gain knowledge and
+                                    shine for your future career.
+                                </p>
+
+                                <div class="courses__footer">
+                                    <span class="courses__price">$120.75</span>
+                                    <a href="#!" class="courses__book-btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
     </body>
 </html>

@@ -37,6 +37,7 @@ a {
     font-weight: 600;
     color: #FFF;
 }
+
 /* ============ Header ============ */
 .header {
     position: sticky;
@@ -45,13 +46,23 @@ a {
     background: #FFFCF4;
 }
 
-.header .body {
+.header.header--fixed {
+    position: sticky;
+}
+
+.header__content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.header__body {
     padding: 36px 0 8px;
     display: flex;
     align-items: center;
 }
 
-.header .navbar {
+.header__navbar {
     display: flex;
     margin-left: auto;
     justify-content: space-between;
@@ -59,21 +70,21 @@ a {
     margin-right: 70px;
 }
 
-.navbar .item {
+.header__nav-item {
     padding: 8px 21px;
     font-size: 1.6rem;
     font-weight: 400;
     color: #5F5B53;
 }
 
-.navbar .item.active {
+.header__nav-item.header__nav-item--active {
     position: relative;
     font-size: 1.6rem;
     font-weight: 600;
     color: #171100;
 }
 
-.navbar .item.active::after {
+.header__nav-item.header__nav-item--active::after {
     content: "";
     position: absolute;
     bottom: 4px;
@@ -84,45 +95,53 @@ a {
     background: #171100;
 }
 
-.navbar .item:hover {
+.header__nav-item:hover {
     text-shadow: 1px 0 0 currentColor;
     font-size: 1.6rem;
     font-weight: 600;
     color: #171100;
 }
 
-.header .btn {
+.header__btn {
     padding: 17px 41px;
     font-size: 1.6rem;
     border-radius: 2.45rem;
     background: var(--second-color);
+    display: inline-block;
+    border: none;
+    text-align: center;
+    font-weight: 600;
+    color: #FFF;
 }
 
-/* ============ Main-Hero ============ */
+/* ============ Hero ============ */
 .hero {
     padding: 56px 0 65px;
     background: #FFFCF4;
 }
 
-.hero .content {
+.hero__content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-/* Hero-image */
-.hero .image-box {
+/* Hero Image */
+.hero__image-box {
     position: relative;
     width: 48%;
 }
 
-.hero .image {
+.hero__image {
     object-fit: cover;
     width: 47rem;
     height: 68.5rem;
     border-radius: 20px;
 }
 
-.hero .card {
+.hero__card {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -135,17 +154,17 @@ a {
     background: #FFF;
 }
 
-.hero .card-item {
+.hero__card-item {
     display: flex;
     align-items: center;
     padding-top: 18px;
 }
 
-.hero .card-item:first-child {
+.hero__card-item:first-child {
     padding-top: 0;
 }
 
-.hero .icon-cover {
+.hero__icon-cover {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,43 +174,43 @@ a {
     border-radius: 50%;
 }
 
-.hero .icon-cover.icon-1 {
+.hero__icon-cover.hero__icon-cover--ui {
     background: #FFF9E8;
 }
 
-.hero .icon-cover.icon-2 {
+.hero__icon-cover.hero__icon-cover--dev {
     background: #FCEFFF;
 }
 
-.hero .icon-cover.icon-3 {
+.hero__icon-cover.hero__icon-cover--marketing {
     background: #EBEAFF;
 }
 
-.hero .text-box {
+.hero__text-box {
     margin-left: 16px;
 }
 
-.hero .text-box .desc {
+.hero__text-box .hero__desc {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85714; /* 185.714% */
     color: #5F5B53;
 }
 
-.hero .text-box .sub-title {
+.hero__text-box .hero__sub-title {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66667; /* 166.667% */
     color: #171100;
 }
 
-/* Hero-text */
-.hero .text {
+/* Hero Text */
+.hero__text {
     width: 52%;
     padding: 64px 0 0 130px;
 }
 
-.hero .text .title {
+.hero__title {
     font-family: "Sen", sans-serif;
     font-size: 5.8rem;
     font-weight: 700;
@@ -200,7 +219,7 @@ a {
     color: #171100;
 }
 
-.hero .text .desc {
+.hero__description {
     margin-top: 22px;
     font-size: 1.8rem;
     font-weight: 400;
@@ -208,21 +227,27 @@ a {
     color: #5F5B53;
 }
 
-.hero .cta {
+.hero__cta {
     margin-top: 38px;
     display: flex;
     align-items: center;
 }
 
-.hero .btn {
+.hero__btn {
     width: 18rem;
     height: 6.4rem;
     border-radius: 3.2rem;
     background: #FFB900;
     padding: 23px 33px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFF;
 }
 
-.hero .watch-action {
+.hero__watch-action {
     margin-left: 28px;
     display: flex;
     justify-content: center;
@@ -231,39 +256,171 @@ a {
     background: transparent;
 }
 
-.hero .watch-action .icon {
+.hero__watch-icon {
     margin-right: 14px;
 }
 
-.hero .watch-action span {
+.hero__watch-action span {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66667; /* 166.667% */
     color: #171100;
 }
 
-.hero .desc-under {
+.hero__engagement-label {
     display: inline-block;
     margin-top: 48px !important;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66667; /* 166.667% */
+    color: #5F5B53;
 }
 
-.hero .sub-box {
+.hero__stats {
     display: flex;
     gap: 28px;
     margin-top: 8px;
 }
 
-.hero .sub-box .desc {
+.hero__stat {
     margin-top: 0;
     font-size: 1.8rem;
     line-height: 1;
+    font-weight: 400;
+    color: #5F5B53;
 }
 
-.hero .sub-box span {
+.hero__stat span {
     font-family: "Sen", sans-serif;
     font-size: 4.4rem;
     font-weight: 700;
     color: #171100;
 }
 
-/* ============ Main-Courses ============ */
+/* ============ Courses ============ */
+.courses {
+    margin-top: 200px;
+}
+
+.courses__content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    position: relative;
+}
+
+.courses__title {
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26316; /* 126.316% */
+    letter-spacing: -0.076rem;
+    color: #171100;
+}
+
+.courses__description {
+    margin-top: 16px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66667; /* 166.667% */
+    color: #5F5B53;
+}
+
+.courses__pagination-icon {
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+
+.courses__list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.courses__item {
+    width: 370px;
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 1.2rem;
+    background: #FFF;
+}
+
+.courses__image {
+    width: 100%;
+    height: 278px;
+    border-radius: 1.2rem 1.2rem 0 0;
+    object-fit: cover;
+}
+
+.courses__content-block {
+    padding: 16px 22px 36px;
+}
+
+.courses__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses__item-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #171100;
+}
+
+.courses__rating-block {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.courses__star-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.courses__rating {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FEA31B;
+}
+
+.courses__item-description {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+    color: #5F5B53;
+}
+
+.courses__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.courses__price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #171100;
+}
+
+.courses__book-btn {
+    padding: 18px 12px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #FFF;
+    width: 11.8rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background: #171100;
+    transition: 0.3s;
+    display: inline-block;
+    border: none;
+}
+
+.courses__book-btn:hover {
+    background: #FFB900;
+}
