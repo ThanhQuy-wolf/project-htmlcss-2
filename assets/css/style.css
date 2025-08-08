@@ -630,3 +630,122 @@ a {
     border-radius: 2.6rem;
     background: #FFB900;
 }
+
+/* ============ Blog ============ */
+.blog {
+    padding: 96px 0;
+    margin-top: 200px;
+    background: #FFFCF4;
+}
+
+.blog__content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog__title {
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.076rem;
+    color: #130606;
+}
+
+.blog__description {
+    margin-top: 16px;
+    width: 448px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    color: #696262;
+}
+
+.blog__list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    border-radius: 16px;
+}
+
+.blog__item {
+    width: 37rem;
+    height: 46.7rem;
+}
+
+.blog__image {
+    width: 100%;
+    height: 25rem;
+    border-radius: 1.6rem 1.6rem 0 0;
+    object-fit: cover;
+}
+
+.blog__content-block {
+    background: #fff;
+    padding: 20px 20px 28px 20px;
+    border-radius: 0 0 16px 16px;
+}
+
+.blog__date {
+    margin-left: 10px;
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #5F5B53;
+}
+
+.blog__date::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 6px;
+    background: #FFB900;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+}
+
+.blog__separator {
+    margin-top: 12px;
+    width: 16rem;
+    height: 0.2rem;
+    border-radius: 0.05rem;
+    background: #E2DFDA;
+}
+
+.blog__excerpt {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    color: #171100;
+}
+
+.blog__btn {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    color: #FFF;
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+    width: 11.8rem;
+    height: 5rem;
+    padding: 12px 21px;
+    border-radius: 2.5rem;
+    background: #FFB900;
+    transition: 0.3s;
+}
+
+.blog__btn:hover {
+    background: #171100;
+}
+
+.blog__pagination-dots {
+    margin-top: 38px;
+}
