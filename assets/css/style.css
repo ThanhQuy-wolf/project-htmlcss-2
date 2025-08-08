@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFB900;
+    --second-color: #171100;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+}
+
+/* Common */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFF;
+}
+/* ============ Header ============ */
+.header {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+    background: #FFFCF4;
+}
+
+.header .body {
+    padding: 36px 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.navbar .item {
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #5F5B53;
+}
+
+.navbar .item.active {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #171100;
+}
+
+.navbar .item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 21px;
+    width: 1.2rem;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    background: #171100;
+}
+
+.navbar .item:hover {
+    text-shadow: 1px 0 0 currentColor;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #171100;
+}
+
+.header .btn {
+    padding: 17px 41px;
+    font-size: 1.6rem;
+    border-radius: 2.45rem;
+    background: var(--second-color);
+}
+
+/* ============ Main-Hero ============ */
+.hero {
+    padding: 56px 0 65px;
+    background: #FFFCF4;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hero-image */
+.hero .image-box {
+    position: relative;
+    width: 48%;
+}
+
+.hero .image {
+    object-fit: cover;
+    width: 47rem;
+    height: 68.5rem;
+    border-radius: 20px;
+}
+
+.hero .card {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    padding: 24px;
+    width: 270px;
+    border-radius: 1.2rem;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+    background: #FFF;
+}
+
+.hero .card-item {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.hero .card-item:first-child {
+    padding-top: 0;
+}
+
+.hero .icon-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.hero .icon-cover.icon-1 {
+    background: #FFF9E8;
+}
+
+.hero .icon-cover.icon-2 {
+    background: #FCEFFF;
+}
+
+.hero .icon-cover.icon-3 {
+    background: #EBEAFF;
+}
+
+.hero .text-box {
+    margin-left: 16px;
+}
+
+.hero .text-box .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85714; /* 185.714% */
+    color: #5F5B53;
+}
+
+.hero .text-box .sub-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66667; /* 166.667% */
+    color: #171100;
+}
+
+/* Hero-text */
+.hero .text {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .text .title {
+    font-family: "Sen", sans-serif;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17241; /* 117.241% */
+    letter-spacing: -0.116rem;
+    color: #171100;
+}
+
+.hero .text .desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66667; /* 166.667% */
+    color: #5F5B53;
+}
+
+.hero .cta {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .btn {
+    width: 18rem;
+    height: 6.4rem;
+    border-radius: 3.2rem;
+    background: #FFB900;
+    padding: 23px 33px;
+}
+
+.hero .watch-action {
+    margin-left: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+}
+
+.hero .watch-action .icon {
+    margin-right: 14px;
+}
+
+.hero .watch-action span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66667; /* 166.667% */
+    color: #171100;
+}
+
+.hero .desc-under {
+    display: inline-block;
+    margin-top: 48px !important;
+}
+
+.hero .sub-box {
+    display: flex;
+    gap: 28px;
+    margin-top: 8px;
+}
+
+.hero .sub-box .desc {
+    margin-top: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.hero .sub-box span {
+    font-family: "Sen", sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: #171100;
+}
+
+/* ============ Main-Courses ============ */
