@@ -424,3 +424,132 @@ a {
 .courses__book-btn:hover {
     background: #FFB900;
 }
+
+/* ============ Testimonial ============ */
+.testimonial {
+    margin-top: 200px;
+    background: #2E2100;
+}
+
+.testimonial__content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.testimonial__body {
+    padding: 96px 0;
+    display: flex;
+}
+
+.testimonial__avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.testimonial__author-info {
+    margin-top: 18px;
+}
+
+.testimonial__author-name {
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #F7F7F7;
+}
+
+.testimonial__author-title {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+    color: #BFBCB2;
+}
+
+.testimonial__verified-icon {
+    margin-top: 28px;
+}
+
+.testimonial__quote {
+    position: relative;
+}
+
+.testimonial__text {
+    width: 740px;
+    max-width: 100%;
+    padding-top: 28px;
+    margin-left: 271px;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+    color: #FFF;
+}
+
+.testimonial__quote-icon {
+    position: absolute;
+    left: 240px;
+    top: 6px;
+}
+
+/* ============ Feature ============ */
+.features {
+    margin-top: 200px;
+}
+
+.features .body {
+    display: flex;
+}
+
+.features .img-block {
+    width: 49%;
+    height: 438px;
+    display: flex;
+    gap: 30px;
+}
+
+.features .text-block {
+    width: 51%;
+    margin-top: 58px;
+    margin-left: 130px;
+}
+
+.features .image {
+    width: 27rem;
+    height: 40.4rem;
+    border-radius: 1.6rem;
+    object-fit: cover;
+}
+
+.features .image-1 {
+    margin-top: auto;;
+}
+
+.features .sub-title {
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.076rem;
+    color: #171100;
+}
+
+.features .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    color: #5F5B53;
+}
+
+.features .cta {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */ 
+    width: 13.7rem;
+    height: 5rem;
+    padding: 11px 37px;
+    border-radius: 2.6rem;
+    margin-top: 32px;
+    background: #FFB900;
+}
